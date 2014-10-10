@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	>
+
+    <RelativeLayout
+       	android:id="@+id/main_top_container" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_main_title_size"
+        android:background="@color/app_main_color"
+        android:layout_alignParentTop="true"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/app_main_name"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/app_main_title_font_size"
+            />
+        
+    </RelativeLayout>
+    
+    
+    <TextView
+        android:id="@+id/main_bottom_tips" 
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:textColor="@color/black"
+       	android:textSize="@dimen/app_main_font_size"
+       	android:text="@string/app_main_tips"
+       	android:gravity="center"
+       	android:layout_alignParentBottom="true"
+       	android:layout_marginBottom="20dip"
+        />
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_top_container"
+        android:layout_above="@id/main_bottom_tips"
+        android:orientation="vertical"
+        >
+        
+        <ImageView 
+            android:id="@+id/main_user_icon"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:background="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            />
+        
+        
+        <LinearLayout 
+           	android:layout_width="match_parent"
+           	android:layout_height="80dip"
+           	android:orientation="horizontal"
+            >
+            
+           <Button
+               	android:id="@+id/main_publish_part_time_job" 
+               	android:layout_width="80dip"
+           		android:layout_height="80dip"
+               	android:gravity="center"
+               	android:textSize="@dimen/app_main_font_size"
+               	android:textColor="@color/black"
+               	android:background="@android:color/transparent"
+               	android:drawableTop="@drawable/ic_launcher"
+               	android:text="@string/publish_part_time_job"
+               />
+           
+           <Button
+                android:id="@+id/main_find_person"  
+               	android:layout_width="80dip"
+           		android:layout_height="80dip"
+               	android:gravity="center"
+               	android:textSize="@dimen/app_main_font_size"
+               	android:textColor="@color/black"
+               	android:background="@android:color/transparent"
+               	android:drawableTop="@drawable/ic_launcher"
+               	android:text="@string/find_person"
+               />
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+           	android:layout_width="match_parent"
+           	android:layout_height="80dip"
+           	android:orientation="horizontal"
+            >
+            
+            
+            <RelativeLayout 
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                >
+                <Button 
+                    android:id="@+id/main_message_notice"  
+	               	android:layout_width="80dip"
+	           		android:layout_height="80dip"
+	               	android:gravity="center"
+	               	android:textSize="@dimen/app_main_font_size"
+	               	android:textColor="@color/black"
+	               	android:background="@android:color/transparent"
+	               	android:drawableTop="@drawable/ic_launcher"
+	               	android:text="@string/message_notice"
+	               />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/white"
+					android:background="@color/red"
+					android:text="12"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true"
+					android:textStyle="bold"
+					android:paddingLeft="3dip"
+					android:paddingRight="3dip"
+                    />
+            </RelativeLayout>
+           
+           
+           <Button 
+                android:id="@+id/main_manager_job"  
+               	android:layout_width="80dip"
+           		android:layout_height="80dip"
+               	android:gravity="center"
+               	android:textSize="@dimen/app_main_font_size"
+               	android:textColor="@color/black"
+               	android:background="@android:color/transparent"
+               	android:drawableTop="@drawable/ic_launcher"
+               	android:text="@string/manager_job"
+               />
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>
